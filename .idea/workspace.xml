@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc88e5c4-947a-4054-b7b0-f91e65ce98a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyect/fabric/static/fabric/main_fabric.js" beforeDir="false" afterPath="$PROJECT_DIR$/Proyect/fabric/static/fabric/main_fabric.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proyect/fabric/templates/base_fabric.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proyect/fabric/templates/base_fabric.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Proyect/fabric/templates/fabric/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Proyect/fabric/templates/fabric/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proyect/fabric/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Proyect/fabric/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proyect/fabric/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Proyect/fabric/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,11 +19,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Proyect/fabric/templates/fabric/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="210">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Proyect/Proyect/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="537">
+              <caret line="122" selection-start-line="122" selection-end-line="122" />
             </state>
           </provider>
         </entry>
@@ -31,34 +37,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Proyect/fabric/templates/base_fabric.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+            <state relative-caret-position="231">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
               <folding>
                 <element signature="n#src#0;n#img#0;n#a#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Proyect/fabric/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="49" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Proyect/fabric/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
-              <caret line="49" column="42" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -87,14 +69,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Proyect/fabric/templates/fabric/base_fabric.html" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/Proyect/fabric/static/main_fabric.js" />
         <option value="$PROJECT_DIR$/Proyect/Proyect/settings.py" />
-        <option value="$PROJECT_DIR$/Proyect/fabric/static/fabric/main_fabric.js" />
         <option value="$PROJECT_DIR$/Proyect/Proyect/urls.py" />
         <option value="$PROJECT_DIR$/Proyect/fabric/urls.py" />
-        <option value="$PROJECT_DIR$/Proyect/fabric/templates/fabric/index.html" />
         <option value="$PROJECT_DIR$/Proyect/fabric/views.py" />
+        <option value="$PROJECT_DIR$/Proyect/fabric/static/fabric/main_fabric.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Proyect/fabric/templates/fabric/index.html" />
         <option value="$PROJECT_DIR$/Proyect/fabric/templates/base_fabric.html" />
       </list>
     </option>
@@ -122,6 +105,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,6 +116,24 @@
             <path>
               <item name="RandomProyect" type="b2602c69:ProjectViewProjectNode" />
               <item name="RandomProyect" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RandomProyect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RandomProyect" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RandomProyect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RandomProyect" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RandomProyect" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RandomProyect" type="462c0819:PsiDirectoryNode" />
               <item name="Proyect" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -145,27 +147,12 @@
               <item name="RandomProyect" type="462c0819:PsiDirectoryNode" />
               <item name="Proyect" type="462c0819:PsiDirectoryNode" />
               <item name="fabric" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RandomProyect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RandomProyect" type="462c0819:PsiDirectoryNode" />
-              <item name="Proyect" type="462c0819:PsiDirectoryNode" />
-              <item name="fabric" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="fabric" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="RandomProyect" type="b2602c69:ProjectViewProjectNode" />
-              <item name="RandomProyect" type="462c0819:PsiDirectoryNode" />
-              <item name="Proyect" type="462c0819:PsiDirectoryNode" />
-              <item name="Proyect" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -173,7 +160,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="ECMAScript 6" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Proyect/fabric/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -183,6 +170,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Proyect/fabric/static" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Proyect/fabric/static/fabric" />
       <recent name="$PROJECT_DIR$/Proyect/fabric/templates" />
@@ -211,18 +201,26 @@
       <option name="presentableId" value="Default" />
       <updated>1555537656388</updated>
       <workItem from="1555789172895" duration="2865000" />
-      <workItem from="1555792088578" duration="33003000" />
+      <workItem from="1555792088578" duration="38100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35868000" />
+    <option name="totallyTimeSpent" value="40965000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="2" width="1366" height="766" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24981357" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981357" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -231,11 +229,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286385" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33020344" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33020344" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -246,13 +244,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.es6" />
     <entry file="file://$PROJECT_DIR$/Proyect/fabric/static/main_fabric.js" />
     <entry file="file://$PROJECT_DIR$/Proyect/Proyect/settings.py">
@@ -263,22 +254,6 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts" />
-    <entry file="file://$PROJECT_DIR$/Proyect/fabric/static/fabric/main_fabric.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
-          <folding>
-            <element signature="e#158#212#0" />
-            <element signature="n#Game#0" />
-            <element signature="n#Hitbox#0" />
-            <element signature="n#!!block;n#createHexagon#0" />
-            <element signature="n#!!block;n#resizeCanvas#0" />
-            <element signature="n#!!block;n#onKeyDown#0" />
-            <element signature="n#!!block;n#inputs#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Proyect/Proyect/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -299,16 +274,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Proyect/fabric/templates/fabric/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Proyect/fabric/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="537">
@@ -319,10 +284,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Proyect/fabric/static/fabric/main_fabric.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="253" column="31" selection-start-line="253" selection-start-column="31" selection-end-line="253" selection-end-column="31" />
+          <folding>
+            <element signature="e#158#212#0" />
+            <element signature="n#Hitbox#0" />
+            <element signature="n#Player#0" />
+            <element signature="n#Enemy#0" />
+            <element signature="e#1853#3060#0" />
+            <element signature="n#!!block;n#createHexagon#0" />
+            <element signature="n#!!block;n#resizeCanvas#0" />
+            <element signature="n#!!block;n#onKeyDown#0" />
+            <element signature="n#!!block;n#inputs#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="83" column="10" selection-start-line="83" selection-start-column="10" selection-end-line="83" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Proyect/fabric/templates/fabric/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Proyect/fabric/static/fabric.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/popper/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/popper/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-945" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/popper/cli">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/popper/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Proyect/fabric/static/client.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Proyect/fabric/static/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Proyect/fabric/templates/base_fabric.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="231">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding>
             <element signature="n#src#0;n#img#0;n#a#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

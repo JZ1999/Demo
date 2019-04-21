@@ -1,0 +1,25 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "fabric, xhtml2pdf, django drf demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JZ1999/RandomProyect.git"
+  },
+  "author": "Joseph David Zamora Murill",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JZ1999/RandomProyect/issues"
+  },
+  "homepage": "https://github.com/JZ1999/RandomProyect#readme",
+  "devDependencies": {
+    "bootstrap": "^4.3.1",
+    "fabric": "^2.7.0",
+    "jquery": "^3.4.0",
+    "popper": "^1.0.1"
+  }
+}

@@ -12,7 +12,7 @@
  const FPS = 5;
 
 class Game{
-    canvas;
+    static canvas;
     player;
     constructor(_canvas, _player){
         this.canvas = _canvas;
@@ -242,10 +242,28 @@ function game_setup(canvas){
 
 const main = () => {
     let canvas = configureCanvas();
-
+    Game.canvas = canvas;
     let game = game_setup(canvas);
     setInterval(() => {game_loop(game)}, 1000/FPS);
 };
 
 
 window.onload = main;
+
+function serialize(){
+    const api_url = "/api/save";
+    $.ajax({
+        url: api_url,
+        dataType: 'text',
+        type: 'post',
+        contentType: 'application/x-www-form-urlencoded',
+        data: JSON.stringify(Game.canvas),
+        success: function( data, textStatus, jQxhr ){
+            console.log(data);
+        },
+        error: function( jqXhr, textStatus, errorThrown ){
+            console.log( errorThrown );
+            console.log(JSON.stringify(Game.canvas));
+        }
+    });
+}
