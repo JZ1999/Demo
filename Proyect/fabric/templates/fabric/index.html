@@ -9,8 +9,9 @@
             <form method="post" action="{% url 'save' %}">
                 {% csrf_token %}
                 <div class="btn-group" role="group" aria-label="Basic example">
-                    <button class="btn btn-outline-primary btn-lg" type="submit">PDF</button>
-                    <button class="btn btn-outline-success btn-lg" type="button" onclick="serialize()">Save</button>
+                    <button class="btn btn-outline-primary btn-lg disabled" disabled id="pdf_btn" type="submit">PDF</button>
+                    <button class="btn btn-outline-success btn-lg disabled" disabled id="save_btn" type="button" onclick="serialize()">Save</button>
+                    <button class="btn btn-outline-warning btn-lg" type="button" onclick="main()">Play</button>
                 </div>
             </form>
         </div>
@@ -20,8 +21,8 @@
         <canvas id="canvas"></canvas>
     </div>
 
-    <script src="{% static 'fabric/main_fabric.js' %}">
-    </script>
+    <script src="{% static 'fabric/main_fabric.js' %}" id="main_fabric" data-json_string="{{ json_string }}"></script>
+
     <style>
         * { margin: 0; padding: 0;}
 

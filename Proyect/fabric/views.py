@@ -3,15 +3,20 @@ from django.shortcuts import render
 import os
 from django.conf import settings
 from django.http import HttpResponse
-from django.template import Context
 from django.template.loader import get_template
 from xhtml2pdf import pisa
+from api.models import Game
+from django.shortcuts import get_object_or_404
 
 
 class FabricView(View):
 
-    def get(self, request):
-        return render(request, 'fabric/index.html', context={})
+    def get(self, request, pk=None):
+        if not pk:
+            return render(request, 'fabric/index.html', context={})
+        game = get_object_or_404(Game, pk=pk)
+        return render(request, 'fabric/index.html', context={"json_string": game.saved_data})
+
 
 def link_callback(uri, rel):
     """

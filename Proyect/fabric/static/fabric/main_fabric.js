@@ -48,7 +48,6 @@ class Player{
         this.render = render;
         this.hitbox = new Hitbox(render.top, render.left,
                                 render.width, render.height);
-        console.log(this.hitbox);
     }
 }
 
@@ -63,7 +62,6 @@ class Enemy{
         this.render = render;
         this.hitbox = new Hitbox(render.top, render.left,
             render.width, render.height);
-        console.log(this.hitbox);
     }
 
     should_despawn(canvas){
@@ -164,10 +162,16 @@ function resizeCanvas(canvas, height = window.innerHeight, width = window.innerW
         canvas.renderAll();
 }
 
-function configureCanvas(){
-    let canvas = new fabric.Canvas('canvas', {
-        backgroundColor : "#44f"
-    });
+function configureCanvas(json_string=null){
+    let canvas;
+    if(json_string){
+        canvas = new fabric.StaticCanvas('canvas');
+        canvas.loadFromJSON(json_string);
+    }else{
+        canvas = new fabric.StaticCanvas('canvas', {
+            backgroundColor : "#44f"
+        });
+    }
     resizeCanvas(canvas);
 
     return canvas;
@@ -241,29 +245,54 @@ function game_setup(canvas){
 }
 
 const main = () => {
-    let canvas = configureCanvas();
+    alert("Dodge the blacks circles! Move with the WASD keys");
+    $('#pdf_btn').toggleClass('disabled');
+    $('#save_btn').toggleClass('disabled');
+    $('#pdf_btn').prop('disabled', function(i, v) { return !v; });
+    $('#save_btn').prop('disabled', function(i, v) { return !v; });
+    let json_string = $("#main_fabric").attr("data-json_string");
+    let canvas = configureCanvas(json_string);
     Game.canvas = canvas;
-    let game = game_setup(canvas);
+    let game;
+    if(json_string == "") {
+        game = game_setup(canvas);
+    }else{
+        //BUG must make a method to obtain a new Game if json_string is given
+        game = null;
+    }
     setInterval(() => {game_loop(game)}, 1000/FPS);
 };
 
 
-window.onload = main;
+
+ // Setup ajax connections safetly
+
+ function csrfSafeMethod(method) {
+     // these HTTP methods do not require CSRF protection
+     return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+ }
 
 function serialize(){
-    const api_url = "/api/save";
+    const api_url = "/api/save/";
+    const csrf_token = $.cookie("csrftoken");
+    $.ajaxSetup({
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                xhr.setRequestHeader("X-CSRFToken", csrf_token);
+            }
+        }
+    });
     $.ajax({
         url: api_url,
-        dataType: 'text',
-        type: 'post',
-        contentType: 'application/x-www-form-urlencoded',
-        data: JSON.stringify(Game.canvas),
+        type: 'POST',
+        datatype: 'json',
+        data: {'saved_data': JSON.stringify(Game.canvas), 'csrfmiddlewaretoken': csrf_token},
         success: function( data, textStatus, jQxhr ){
-            console.log(data);
+            alert("success! You may reload this game in " + window.location.href + data.id)
         },
         error: function( jqXhr, textStatus, errorThrown ){
             console.log( errorThrown );
-            console.log(JSON.stringify(Game.canvas));
+            alert( errorThrown );
         }
     });
 }
